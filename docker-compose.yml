@@ -6,11 +6,11 @@ services:
     image: linuxserver/heimdall:latest
     container_name: heimdall
     environment:
-      - PUID=1000
-      - PGID=1000
-      - FILE__TZ=/run/secrets/heimdall
-#    volumes:
-#      - ./config:/config
+      - PUID={UID}
+      - PGID={GID}
+      - TZ={TIME}
+    volumes:
+      - ./h_config:/config
     ports:
       - 8500:80
       - 6443:443
