@@ -6,9 +6,9 @@ services:
     image: linuxserver/heimdall:latest
     container_name: heimdall
     environment:
-      - PUID={UID}
-      - PGID={GID}
-      - TZ={TIME}
+      - PUID=${UID}
+      - PGID=${GID}
+      - TZ=${TIME}
     volumes:
       - ./h_config:/config
     ports:
