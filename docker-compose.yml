@@ -12,6 +12,6 @@ services:
     volumes:
       - ./h_config:/config
     ports:
-      - 8500:80
+      - 80:80
       - 4343:443
     restart: unless-stopped
