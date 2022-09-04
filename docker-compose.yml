@@ -10,7 +10,7 @@ services:
       - PGID=${GID}
       - TZ=${TIME}
     volumes:
-      - ./h_config:/config
+      - /Sistemas/Heimdall/h_config:/config
     ports:
       - 80:80
       - 4343:443
